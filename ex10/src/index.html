@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" type="text/css"/>
+</head>
+<body>
+    <div class="row">
+        <div class="column side">
+            <nav id="navbar"> <!-- NAVBAR MENI -->
+                <header id="header">Eloquent JavaScript</header>
+                <ul>
+                    <li class="nav-links">
+                        <a href="#introduction" >Introduction</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#values_types_and_operators">Values, Types, and Operators</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#program_structure">Program Structure</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#functions">Functions</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#objects_and_arrays">Data Structures: Objects and Arrays</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#higher_order_functions" >Higher-order Functions</a>
+                    </li>
+                    <li>
+                        <img id="header-img" src="https://eloquentjavascript.net/img/cover.jpg" alt="Eloquent JavaScript"/>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="column main">
+            <main id="main-doc"> <!-- MAIN MENI -->
+
+                <section id="introduction"> <!-- MAIN.PAGE01 MENI -->
+                    <header>Introduction</header> <br>
+                    <article style="margin-left: 10px;">
+                        <p>
+                            This is a book about instructing computers. Computers are about
+                            as common as screwdrivers today, but they are quite a bit more
+                            complex, and making them do what you want them to do isn’t
+                            always easy.
+                        </p> <br>
+                        <ul>
+                            <li>
+                                <p><strong>On programming</strong></p> <br>
+                                <p>
+                                    Besides explaining JavaScript, I will introduce the basic
+                                    principles of programming. Programming, it turns out, is
+                                    hard. The fundamental rules are simple and clear, but
+                                    programs built on top of these rules tend to become complex
+                                    enough to introduce their own rules and complexity. You’re
+                                    building your own maze, in a way, and you might just get
+                                    lost in it.
+                                </p> <br>
+                            </li>
+                            <li>
+                                <p><strong>Why language matters</strong></p> <br>
+                                <p>
+                                    In the beginning, at the birth of computing, there were no
+                                    programming languages. Programs looked something like this:
+                                </p> <br>
+                                <div class="main-div">
+                                    <code>
+                                        00110001 00000001 00000001
+                                        00110011 00000001 00000010
+                                        01010001 00001010 00000010
+                                        00100010 00000010 00001000
+                                        01000011 00000001 00000000
+                                        01000001 00000001 00000001
+                                        00010000 00000010 00000000
+                                        01100010 00000000 00000000
+                                    </code>
+                                </div> <br>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section id="values_types_and_operators"> <!-- MAIN.PAGE02 MENI -->
+                    <header>Values Types and Operators</header> <br>
+                    <article style="margin-left: 10px;">
+                        <p>
+                            Inside the computer’s world, there is only data. You can read
+                            data, modify data, create new data—but that which isn’t data
+                            cannot be mentioned. All this data is stored as long sequences
+                            of bits and is thus fundamentally alike.
+                        </p> <br>
+                        <div class="main-div">
+                            <code>
+                                  0   0   0   0   1   1   0   1
+                                128  64  32  16  8   4   2   1
+                            </code>
+                        </div> <br>
+                    </article>
+                </section>
+
+                <section id="program_structure"> <!-- MAIN.PAGE03 MENI -->
+                    <header>Program Structure</header> <br>
+                    <article style="margin-left: 10px;">
+                        <p>
+                            In this chapter, we will start to do things that can actually be
+                            called programming. We will expand our command of the JavaScript
+                            language beyond the nouns and sentence fragments we’ve seen so
+                            far, to the point where we can express meaningful prose.
+                        </p> <br>
+                        <ul>
+                            <li>
+                                <p><strong>Expressions and statements</strong></p> <br>
+                                <p>
+                                    In Chapter 1, we made values and applied operators to them
+                                    to get new values. Creating values like this is the main
+                                    substance of any JavaScript program. But that substance has
+                                    to be framed in a larger structure to be useful. So that’s
+                                    what we’ll cover next.
+                                </p> <br>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section id="functions"> <!-- MAIN.PAGE04 MENI -->
+                    <header>Functions</header> <br>
+                    <article style="margin-left: 10px">
+                        <p>
+                            Functions are the bread and butter of JavaScript programming.
+                            The concept of wrapping a piece of program in a value has many
+                            uses. It gives us a way to structure larger programs, to reduce
+                            repetition, to associate names with subprograms, and to isolate
+                            these subprograms from each other.
+                        </p> <br>
+                        <ul>
+                            <li>
+                                <p><strong>Defining a function</strong></p> <br>
+                                <p>
+                                    A function definition is a regular binding where the value
+                                    of the binding is a function. For example, this code defines
+                                    square to refer to a function that produces the square of a
+                                    given number:
+                                </p> <br>
+                                <div class="main-div">
+                                    <code>
+                                        const square = function(x) {
+                                        return x * x;
+                                        };
+                                        console.log(square(12));
+                                        // → 144
+                                    </code>
+                                </div> <br>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section id="objects_and_arrays"> <!-- MAIN.PAGE05 MENI -->
+                    <header>Objects and Arrays</header> <br>
+                    <article style="margin-left: 10px;">
+                        <p>
+                            Numbers, Booleans, and strings are the atoms that data
+                            structures are built from. Many types of information require
+                            more than one atom, though. Objects allow us to group
+                            values—including other objects—to build more complex structures.
+                        </p> <br>
+                        <ul>
+                            <li>
+                                <p><strong>The Weresquirrel</strong></p> <br>
+                                <p>
+                                    Every now and then, usually between 8 p.m. and 10 p.m.,
+                                    Jacques finds himself transforming into a small furry rodent
+                                    with a bushy tail.
+                                </p> <br>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section id="higher_order_functions"> <!-- MAIN.PAGE06 MENI -->
+                    <header>Higher order Functions</header> <br>
+                    <ul>
+                        <li>
+                            <p><strong>Encapsulation</strong></p> <br>
+                            <p>
+                                The core idea in object-oriented programming is to divide
+                                programs into smaller pieces and make each piece responsible
+                                for manafing its own state.
+                            </p> <br>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
