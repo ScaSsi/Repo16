@@ -14,7 +14,7 @@ class Microsoft {
     }
 
     occupation() {
-        console.log(this._name + " is a philanthropist!");
+        return console.log(this._name + " is a philanthropist!");
     }
 
 }
@@ -26,7 +26,7 @@ class Facebook extends Microsoft {
     }
 
     studentAge() {
-        console.log(`${this._name} is ${this.age}`);
+        return console.log(`${this._name} is ${this.age}`);
     }
 }
 
